@@ -1,0 +1,15 @@
+package com.formation.isbn;
+
+public class StockManger {
+	private ExternalISBNDataService service;
+	
+	
+public void setService(ExternalISBNDataService service) {
+		this.service = service;
+	}
+
+
+public String getLocalCode(String isbn) {
+	return null;
+}
+}

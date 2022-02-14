@@ -1,0 +1,7 @@
+package com.formation.isbn;
+
+public class StockManger {
+public String getLocalCode(String isbn) {
+	return null;
+}
+}

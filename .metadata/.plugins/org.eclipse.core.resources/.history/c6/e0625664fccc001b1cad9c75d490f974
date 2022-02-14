@@ -1,0 +1,17 @@
+package com.formation.isbn;
+
+public class StockManger {
+	private ExternalISBNDataService service;
+
+	public void setService(ExternalISBNDataService service) {
+		this.service = service;
+	}
+
+	public String getLocalCode(String isbn) {
+		Book book = service.lookup(isbn);
+		StringBuilder locator = new StringBuilder();
+		locator.append(isbn.substring(isbn.length()-4));
+		locator.append(book.getAuthor().substring(0, 1));
+		return null;
+	}
+}
